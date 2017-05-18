@@ -7,3 +7,91 @@
 # pagination-js-component
 
 A vuejs, angular, reactjs pagination component
+
+#### install
+
+`npm i pagination-js-component`
+
+#### link css
+
+```html
+<link rel="stylesheet" href="./node_modules/pagination-js-component/dist/pagination.min.css" />
+```
+
+#### vuejs component demo
+
+`npm i vue vue-class-component`
+
+```ts
+import "pagination-js-component/dist/vue";
+```
+
+```html
+<pagination :total="total"
+    :current="current"
+    :count="count"
+    @jump="jump(arguments[0])"></pagination>
+```
+
+the online demo: https://plantain-00.github.io/pagination-js-component/demo/vue/index.html
+
+the source code of the demo: https://github.com/plantain-00/pagination-js-component/tree/master/demo/vue
+
+#### reactjs component demo
+
+```ts
+import { Pagination } from "pagination-js-component/dist/react";
+```
+
+```html
+<Pagination total={this.total}
+    current={this.current}
+    count={this.count}
+    jump={page => this.jump(page)}></Pagination>
+```
+
+the online demo: https://plantain-00.github.io/pagination-js-component/demo/react/index.html
+
+the source code of the demo: https://github.com/plantain-00/pagination-js-component/tree/master/demo/react
+
+#### angular component demo
+
+```ts
+import { PaginationComponent } from "pagination-js-component/dist/angular";
+
+@NgModule({
+    imports: [BrowserModule, FormsModule],
+    declarations: [MainComponent, PaginationComponent],
+    bootstrap: [MainComponent],
+})
+class MainModule { }
+```
+
+```html
+<pagination [total]="total"
+    [current]="current"
+    [count]="count"
+    (jump)="jump($event)"></pagination>
+```
+
+the online demo: https://plantain-00.github.io/pagination-js-component/demo/angular/index.html
+
+the source code of the demo: https://github.com/plantain-00/pagination-js-component/tree/master/demo/angular
+
+#### properties and events of the component
+
+name | type | description
+--- | --- | ---
+total | number | total page count
+current | number | current page
+count | number | page count around current page, eg, if `current` is 5, `count` is 2, then `3 4 5 6 7` will be displayed
+jump | (page: number) => void | triggered when click a page
+
+#### features
+
++ vuejs component
++ reactjs component
++ angular component
++ commonjs module
++ previous/next page
++ home/end page
