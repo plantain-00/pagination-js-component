@@ -1,24 +1,25 @@
 import * as Vue from "vue";
+import Component from "vue-class-component";
 import "../../dist/vue";
 
-/* tslint:disable:no-unused-expression */
-new Vue({
-    el: "#container",
-    data: {
-        total: 10,
-        current: 1,
-        count: 2,
-    },
-    methods: {
-        jump(this: This, page: number) {
-            this.current = page;
-        },
-    },
-});
-/* tslint:enable:no-unused-expression */
+@Component({
+    template: `
+    <pagination :total="total"
+        :current="current"
+        :count="count"
+        @jump="jump(arguments[0])"></pagination>
+    `,
+})
+class App extends Vue {
+    total = 10;
+    current = 1;
+    count = 2;
 
-type This = {
-    total: number;
-    current: number;
-    count: number;
-} & Vue;
+    jump(page: number) {
+        this.current = page;
+    }
+}
+
+/* tslint:disable:no-unused-expression */
+new App({ el: "#container" });
+/* tslint:enable:no-unused-expression */
