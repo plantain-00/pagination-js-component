@@ -8,6 +8,15 @@
 
 A vuejs, angular, reactjs pagination component
 
+#### features
+
++ vuejs component
++ reactjs component
++ angular component
++ commonjs module
++ previous/next page
++ home/end page
+
 #### install
 
 `npm i pagination-js-component`
@@ -35,8 +44,6 @@ import "pagination-js-component/dist/vue";
 
 the online demo: https://plantain-00.github.io/pagination-js-component/demo/vue/index.html
 
-the source code of the demo: https://github.com/plantain-00/pagination-js-component/tree/master/demo/vue
-
 #### reactjs component demo
 
 ```ts
@@ -51,8 +58,6 @@ import { Pagination } from "pagination-js-component/dist/react";
 ```
 
 the online demo: https://plantain-00.github.io/pagination-js-component/demo/react/index.html
-
-the source code of the demo: https://github.com/plantain-00/pagination-js-component/tree/master/demo/react
 
 #### angular component demo
 
@@ -76,8 +81,6 @@ class MainModule { }
 
 the online demo: https://plantain-00.github.io/pagination-js-component/demo/angular/index.html
 
-the source code of the demo: https://github.com/plantain-00/pagination-js-component/tree/master/demo/angular
-
 #### properties and events of the component
 
 name | type | description
@@ -86,12 +89,3 @@ total | number | total page count
 current | number | current page
 count | number | page count around current page, eg, if `current` is 5, `count` is 2, then `3 4 5 6 7` will be displayed
 jump | (page: number) => void | triggered when click a page
-
-#### features
-
-+ vuejs component
-+ reactjs component
-+ angular component
-+ commonjs module
-+ previous/next page
-+ home/end page

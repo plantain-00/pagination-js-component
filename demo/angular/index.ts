@@ -12,10 +12,14 @@ import { Component } from "@angular/core";
 @Component({
     selector: "app",
     template: `
-    <pagination [total]="total"
-        [current]="current"
-        [count]="count"
-        (jump)="jump($event)"></pagination>
+    <div>
+        <a href="https://github.com/plantain-00/pagination-js-component/tree/master/demo/angular/index.ts" target="_blank">the source code of the demo</a>
+        <pagination [total]="total"
+            [current]="current"
+            [count]="count"
+            (jump)="jump($event)">
+        </pagination>
+    </div>
     `,
 })
 export class MainComponent {

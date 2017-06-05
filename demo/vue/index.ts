@@ -4,10 +4,14 @@ import "../../dist/vue";
 
 @Component({
     template: `
-    <pagination :total="total"
-        :current="current"
-        :count="count"
-        @jump="jump(arguments[0])"></pagination>
+    <div>
+        <a href="https://github.com/plantain-00/pagination-js-component/tree/master/demo/vue/index.ts" target="_blank">the source code of the demo</a>
+        <pagination :total="total"
+            :current="current"
+            :count="count"
+            @jump="jump(arguments[0])">
+        </pagination>
+    </div>
     `,
 })
 class App extends Vue {
