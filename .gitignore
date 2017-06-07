@@ -58,10 +58,10 @@ typings/
 .env
 
 
-# Custom
+# Source
 .vscode
 dist
 demo/**/*.js
+demo/**/*.css
 demo/**/index.html
 !*.config.js
-demo/**/*.css
