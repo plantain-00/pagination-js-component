@@ -9,7 +9,7 @@ import "../../dist/vue";
         <pagination :total="total"
             :current="current"
             :count="count"
-            @jump="jump(arguments[0])">
+            @jump="jump($event)">
         </pagination>
     </div>
     `,

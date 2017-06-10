@@ -39,7 +39,7 @@ import "pagination-js-component/dist/vue";
 <pagination :total="total"
     :current="current"
     :count="count"
-    @jump="jump(arguments[0])"></pagination>
+    @jump="jump($event)"></pagination>
 ```
 
 the online demo: https://plantain-00.github.io/pagination-js-component/demo/vue/index.html
