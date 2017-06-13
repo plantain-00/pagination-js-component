@@ -13,7 +13,6 @@ A vuejs, angular, reactjs pagination component
 + vuejs component
 + reactjs component
 + angular component
-+ commonjs module
 + previous/next page
 + home/end page
 
