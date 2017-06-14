@@ -5,15 +5,16 @@ import { srcVueTemplateHtml } from "./vue-variables";
 
 @Component({
     template: srcVueTemplateHtml,
-    props: ["total", "current", "count"],
+    props: ["total", "current", "count", "mode"],
 })
 class Pagination extends Vue {
     total: number;
     current: number;
     count: number;
+    mode?: number;
 
     get pages() {
-        return common.getPages(this.current, this.total, this.count);
+        return common.getPages(this.current, this.total, this.count, this.mode);
     }
 
     jumpTo(page: number) {

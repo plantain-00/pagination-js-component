@@ -88,3 +88,4 @@ total | number | total page count
 current | number | current page
 count | number | page count around current page, eg, if `current` is 5, `count` is 2, then `3 4 5 6 7` will be displayed
 jump | (page: number) => void | triggered when click a page
+mode | number? | mode

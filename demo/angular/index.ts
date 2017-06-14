@@ -14,21 +14,36 @@ import { Component } from "@angular/core";
     template: `
     <div>
         <a href="https://github.com/plantain-00/pagination-js-component/tree/master/demo/angular/index.ts" target="_blank">the source code of the demo</a>
+        <h3>default mode:</h3>
         <pagination [total]="total"
-            [current]="current"
+            [current]="current1"
             [count]="count"
-            (jump)="jump($event)">
+            (jump)="jump1($event)">
+        </pagination>
+        <br/>
+        <h3>mode 1:</h3>
+        <pagination [total]="total"
+            [current]="current2"
+            [count]="count"
+            [mode]="mode1"
+            (jump)="jump2($event)">
         </pagination>
     </div>
     `,
 })
 export class MainComponent {
-    total = 10;
-    current = 1;
+    total = 12;
+    current1 = 1;
     count = 2;
 
-    jump(page: number) {
-        this.current = page;
+    current2 = 1;
+    mode1 = 1;
+
+    jump1(page: number) {
+        this.current1 = page;
+    }
+    jump2(page: number) {
+        this.current2 = page;
     }
 }
 

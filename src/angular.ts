@@ -13,12 +13,14 @@ export class PaginationComponent {
     current: number;
     @Input()
     count: number;
+    @Input()
+    mode?: number;
 
     @Output()
     jump = new EventEmitter<number>();
 
     get pages() {
-        return common.getPages(this.current, this.total, this.count);
+        return common.getPages(this.current, this.total, this.count, this.mode);
     }
 
     jumpTo(page: number) {

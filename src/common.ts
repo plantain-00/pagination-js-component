@@ -4,7 +4,7 @@ export type Page = {
     text: string;
 };
 
-export function getPages(current: number, total: number, count: number) {
+export function getPages(current: number, total: number, count: number, mode: number | undefined) {
     const pages: Page[] = [];
     pages.push({
         value: 1,
@@ -16,8 +16,14 @@ export function getPages(current: number, total: number, count: number) {
         disabled: current === 1,
         text: "‹",
     });
+    const mode1Count = 2 * count + 1;
+    const mode1StartIndex = Math.floor((current - 1) / mode1Count) * mode1Count + 1;
+    const mode1EndIndex = Math.min(mode1StartIndex + mode1Count - 1, total);
     for (let i = 1; i <= total; i++) {
-        if (i - current <= count && i - current >= -count) {
+        const isVisible = mode === 1
+            ? i >= mode1StartIndex && i <= mode1EndIndex
+            : i - current <= count && i - current >= -count;
+        if (isVisible) {
             pages.push({
                 value: i,
                 disabled: i === current,
