@@ -23,7 +23,7 @@ A vuejs, angular, reactjs pagination component
 #### link css
 
 ```html
-<link rel="stylesheet" href="./node_modules/pagination-js-component/dist/pagination.min.css" />
+<link rel="stylesheet" href="./node_modules/pagination-js-component/pagination.min.css" />
 ```
 
 #### vuejs component demo
@@ -31,7 +31,7 @@ A vuejs, angular, reactjs pagination component
 `npm i vue vue-class-component`
 
 ```ts
-import "pagination-js-component/dist/vue";
+import "pagination-js-component/vue";
 ```
 
 ```html
@@ -46,7 +46,7 @@ the online demo: https://plantain-00.github.io/pagination-js-component/demo/vue/
 #### reactjs component demo
 
 ```ts
-import { Pagination } from "pagination-js-component/dist/react";
+import { Pagination } from "pagination-js-component/react";
 ```
 
 ```html
@@ -61,7 +61,7 @@ the online demo: https://plantain-00.github.io/pagination-js-component/demo/reac
 #### angular component demo
 
 ```ts
-import { PaginationComponent } from "pagination-js-component/dist/angular";
+import { PaginationComponent } from "pagination-js-component/angular";
 
 @NgModule({
     imports: [BrowserModule, FormsModule],
@@ -89,3 +89,13 @@ current | number | current page
 count | number | page count around current page, eg, if `current` is 5, `count` is 2, then `3 4 5 6 7` will be displayed
 jump | (page: number) => void | triggered when click a page
 mode | number? | mode
+
+#### change logs
+
+```ts
+// v2
+import "pagination-js-component/vue";
+
+// v1
+import "pagination-js-component/dist/vue";
+```
