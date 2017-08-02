@@ -9,7 +9,7 @@ module.exports = {
     `lessc src/pagination.less > dist/pagination.css`,
     `cleancss -o dist/pagination.min.css dist/pagination.css`,
     `cleancss -o demo/index.bundle.css dist/pagination.min.css ./node_modules/github-fork-ribbon-css/gh-fork-ribbon.css`,
-    `webpack --config demo/webpack.config.js`,
+    `webpack --display-modules --config demo/webpack.config.js`,
     `rev-static --config demo/rev-static.config.js`
   ],
   lint: [
