@@ -62,11 +62,11 @@ the online demo: https://plantain-00.github.io/pagination-js-component/demo/reac
 #### angular component demo
 
 ```ts
-import { PaginationComponent } from "pagination-js-component/angular";
+import { PaginationModule } from "pagination-js-component/angular";
 
 @NgModule({
-    imports: [BrowserModule, FormsModule],
-    declarations: [MainComponent, PaginationComponent],
+    imports: [BrowserModule, FormsModule, PaginationModule],
+    declarations: [MainComponent],
     bootstrap: [MainComponent],
 })
 class MainModule { }

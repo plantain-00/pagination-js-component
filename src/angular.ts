@@ -1,4 +1,5 @@
-import { Component, Input, Output, EventEmitter } from "@angular/core";
+import { Component, Input, Output, EventEmitter, NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
 import * as common from "./common";
 export * from "./common";
 import { angularTemplateHtml } from "./angular-variables";
@@ -28,3 +29,16 @@ export class PaginationComponent {
         this.jump.emit(page);
     }
 }
+
+@NgModule({
+    declarations: [
+        PaginationComponent,
+    ],
+    imports: [
+        CommonModule,
+    ],
+    exports: [
+        PaginationComponent,
+    ],
+})
+export class PaginationModule { }

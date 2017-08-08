@@ -65,3 +65,4 @@ dist
 !*.config.js
 !**/*-*.js
 !**/*-*.css
+src/compiled
