@@ -1,4 +1,4 @@
-export type Page = {
+type Page = {
     value: number;
     disabled: boolean;
     text: string;

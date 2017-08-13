@@ -31,7 +31,7 @@ import { Component } from "@angular/core";
     </div>
     `,
 })
-export class MainComponent {
+class MainComponent {
     total = 12;
     current1 = 1;
     count = 2;

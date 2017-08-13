@@ -22,18 +22,20 @@ module.exports = {
     `rev-static --config demo/rev-static.config.js`
   ],
   lint: {
-    ts: `tslint "src/**/*.ts" "src/**/*.tsx"`,
+    ts: `tslint "src/**/*.ts" "src/**/*.tsx" "spec/**/*.ts" "demo/**/*.ts" "demo/**/*.tsx"`,
     js: `standard "**/*.config.js"`,
-    less: `stylelint "src/**/*.less"`
+    less: `stylelint "src/**/*.less"`,
+    export: `no-unused-export "src/**/*.ts" "src/**/*.tsx" "spec/**/*.ts" "demo/**/*.ts" "demo/**/*.tsx" --exclude "src/compiled/**/*"`
   },
   test: [
     'tsc -p spec',
     'karma start spec/karma.config.js'
   ],
   fix: {
-    ts: `tslint --fix "src/**/*.ts" "src/**/*.tsx"`,
+    ts: `tslint --fix "src/**/*.ts" "src/**/*.tsx" "spec/**/*.ts" "demo/**/*.ts" "demo/**/*.tsx"`,
     js: `standard --fix "**/*.config.js"`,
     less: `stylelint --fix "src/**/*.less"`
   },
-  release: `clean-release`
+  release: `clean-release`,
+  watch: `watch-then-execute "src/**/*.ts" "src/**/*.tsx" "spec/**/*.ts" "demo/**/*.ts" "demo/**/*.tsx" "src/**/*.template.html" --exclude "src/compiled/**/*,src/*-variables.ts" --script "npm run build"`
 }

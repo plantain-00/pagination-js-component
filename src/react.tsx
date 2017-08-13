@@ -2,6 +2,9 @@ import * as React from "react";
 import * as common from "./common";
 export * from "./common";
 
+/**
+ * @public
+ */
 export class Pagination extends React.PureComponent<{
     total: number;
     current: number;

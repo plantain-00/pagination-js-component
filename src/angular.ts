@@ -4,6 +4,9 @@ import * as common from "./common";
 export * from "./common";
 import { angularTemplateHtml } from "./angular-variables";
 
+/**
+ * @public
+ */
 @Component({
     selector: "pagination",
     template: angularTemplateHtml,
@@ -30,6 +33,9 @@ export class PaginationComponent {
     }
 }
 
+/**
+ * @public
+ */
 @NgModule({
     declarations: [
         PaginationComponent,
