@@ -3,21 +3,12 @@ import * as ReactDOM from "react-dom";
 import { Pagination } from "../../dist/react";
 
 class Main extends React.Component<{}, {}> {
-    total = 12;
-    current1 = 1;
-    count = 2;
+    private total = 12;
+    private current1 = 1;
+    private count = 2;
 
-    current2 = 1;
-    mode1 = 1;
-
-    jump1(page: number) {
-        this.current1 = page;
-        this.setState({ current1: this.current1 });
-    }
-    jump2(page: number) {
-        this.current2 = page;
-        this.setState({ current2: this.current2 });
-    }
+    private current2 = 1;
+    private mode1 = 1;
 
     render() {
         return (
@@ -39,6 +30,14 @@ class Main extends React.Component<{}, {}> {
                 </Pagination>
             </div>
         );
+    }
+    private jump1(page: number) {
+        this.current1 = page;
+        this.setState({ current1: this.current1 });
+    }
+    private jump2(page: number) {
+        this.current2 = page;
+        this.setState({ current2: this.current2 });
     }
 }
 
