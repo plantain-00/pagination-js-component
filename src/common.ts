@@ -2,6 +2,7 @@ type Page = {
     value: number;
     disabled: boolean;
     text: string;
+    className: string;
 };
 
 export function getPages(current: number, total: number, count: number, mode: number | undefined) {
@@ -10,11 +11,13 @@ export function getPages(current: number, total: number, count: number, mode: nu
         value: 1,
         disabled: current === 1,
         text: "«",
+        className: "first-page",
     });
     pages.push({
         value: current === 1 ? 1 : current - 1,
         disabled: current === 1,
         text: "‹",
+        className: "previous-page",
     });
     const mode1Count = 2 * count + 1;
     const mode1StartIndex = Math.floor((current - 1) / mode1Count) * mode1Count + 1;
@@ -28,6 +31,7 @@ export function getPages(current: number, total: number, count: number, mode: nu
                 value: i,
                 disabled: i === current,
                 text: i.toString(),
+                className: `page-${i}`,
             });
         }
     }
@@ -35,11 +39,13 @@ export function getPages(current: number, total: number, count: number, mode: nu
         value: current === total ? total : current + 1,
         disabled: current === total,
         text: "›",
+        className: "next-page",
     });
     pages.push({
         value: total,
         disabled: current === total,
         text: "»",
+        className: "last-page",
     });
     return pages;
 }

@@ -1,6 +1,6 @@
 {
   "name": "pagination-js-component",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "A vuejs, angular, reactjs pagination component.",
   "main": "index.js",
   "scripts": {

@@ -23,7 +23,7 @@ export class Pagination extends React.PureComponent<{
             } else {
                 return (
                     <li>
-                        <a href="javascript:void(0)" onClick={e => this.jumpTo(page.value)}>{page.text}</a>
+                        <a href="javascript:void(0)" className={page.className} onClick={e => this.jumpTo(page.value)}>{page.text}</a>
                     </li>
                 );
             }
