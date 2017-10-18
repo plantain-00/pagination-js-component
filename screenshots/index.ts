@@ -10,7 +10,6 @@ import * as puppeteer from "puppeteer";
         await page.waitFor(100);
         await page.screenshot({ path: `screenshots/${type}-initial.png`, fullPage: true });
 
-        // default mode
         await page.click(`.default-mode .page-2`);
         await page.waitFor(100);
         await page.screenshot({ path: `screenshots/${type}-click-2.png`, fullPage: true });
@@ -51,7 +50,6 @@ import * as puppeteer from "puppeteer";
         await page.waitFor(100);
         await page.screenshot({ path: `screenshots/${type}-click-previous.png`, fullPage: true });
 
-        // mode 1
         await page.click(`.mode-1 .page-2`);
         await page.waitFor(100);
         await page.screenshot({ path: `screenshots/${type}-mode-1-click-2.png`, fullPage: true });
