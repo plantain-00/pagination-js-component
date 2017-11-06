@@ -64,6 +64,9 @@ the online demo: https://plantain-00.github.io/pagination-js-component/demo/reac
 ```ts
 import { PaginationModule } from "pagination-js-component/angular";
 
+// for angular AOT:
+// import { PaginationModule } from "pagination-js-component/aot/angular";
+
 @NgModule({
     imports: [BrowserModule, FormsModule, PaginationModule],
     declarations: [MainComponent],
@@ -92,6 +95,14 @@ jump | (page: number) => void | triggered when click a page
 mode | number? | mode
 
 #### change logs
+
+```ts
+// v2 angular AOT:
+import { PaginationModule } from "pagination-js-component/angular";
+
+// v3 angular AOT:
+import { PaginationModule } from "pagination-js-component/aot/angular";
+```
 
 ```ts
 // v2

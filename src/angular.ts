@@ -31,6 +31,10 @@ export class PaginationComponent {
     jumpTo(page: number) {
         this.jump.emit(page);
     }
+
+    trackBy(page: common.Page, index: number) {
+        return index;
+    }
 }
 
 /**
