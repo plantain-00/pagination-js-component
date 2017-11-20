@@ -1,8 +1,7 @@
 {
   "name": "pagination-js-component",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "A vuejs, angular, reactjs pagination component.",
-  "main": "index.js",
   "scripts": {
     "build": "clean-scripts build",
     "lint": "clean-scripts lint",
