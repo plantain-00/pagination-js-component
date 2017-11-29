@@ -17,22 +17,18 @@ A vuejs, angular, reactjs pagination component
 + previous/next page
 + home/end page
 
-#### install
-
-`npm i pagination-js-component`
-
 #### link css
 
 ```html
-<link rel="stylesheet" href="./node_modules/pagination-js-component/pagination.min.css" />
+<link rel="stylesheet" href="./node_modules/pagination-js-component/dist/pagination.min.css" />
 ```
 
-#### vuejs component demo
+#### vuejs component
 
-`npm i vue vue-class-component`
+`npm pagination-vue-component`
 
 ```ts
-import "pagination-js-component/vue";
+import "pagination-vue-component";
 ```
 
 ```html
@@ -42,12 +38,14 @@ import "pagination-js-component/vue";
     @jump="jump($event)"></pagination>
 ```
 
-the online demo: https://plantain-00.github.io/pagination-js-component/demo/vue/index.html
+the online demo: https://plantain-00.github.io/pagination-js-component/packages/vue/demo
 
-#### reactjs component demo
+#### reactjs component
+
+`npm pagination-react-component`
 
 ```ts
-import { Pagination } from "pagination-js-component/react";
+import { Pagination } from "pagination-react-component";
 ```
 
 ```html
@@ -57,15 +55,14 @@ import { Pagination } from "pagination-js-component/react";
     jump={page => this.jump(page)}></Pagination>
 ```
 
-the online demo: https://plantain-00.github.io/pagination-js-component/demo/react/index.html
+the online demo: https://plantain-00.github.io/pagination-js-component/packages/react/demo
 
-#### angular component demo
+#### angular component
+
+`npm pagination-angular-component`
 
 ```ts
-import { PaginationModule } from "pagination-js-component/angular";
-
-// for angular AOT:
-// import { PaginationModule } from "pagination-js-component/aot/angular";
+import { PaginationModule } from "pagination-angular-component";
 
 @NgModule({
     imports: [BrowserModule, FormsModule, PaginationModule],
@@ -82,9 +79,9 @@ class MainModule { }
     (jump)="jump($event)"></pagination>
 ```
 
-the online demo: https://plantain-00.github.io/pagination-js-component/demo/angular/index.html
+the online demo: https://plantain-00.github.io/pagination-js-component/packages/vue/demo/jit
 
-the AOT online demo: https://plantain-00.github.io/pagination-js-component/demo/aot/index.html
+the AOT online demo: https://plantain-00.github.io/pagination-js-component/packages/vue/demo/aot
 
 #### properties and events of the component
 
@@ -97,6 +94,36 @@ jump | (page: number) => void | triggered when click a page
 mode | number? | mode
 
 #### change logs
+
+```bash
+# v3
+npm i pagination-js-component
+
+# v4
+npm i pagination-vue-component
+npm i pagination-react-component
+npm i pagination-angular-component
+```
+
+```ts
+// v3
+import "pagination-js-component/vue";
+import { Pagination } from "pagination-js-component/react";
+import { PaginationModule } from "pagination-js-component/angular";
+
+// v4
+import "pagination-vue-component";
+import { Pagination } from "pagination-react-component";
+import { PaginationModule } from "pagination-angular-component";
+```
+
+```html
+// v3
+<link rel="stylesheet" href="./node_modules/pagination-js-component/pagination.min.css" />
+
+// v4
+<link rel="stylesheet" href="./node_modules/pagination-js-component/dist/pagination.min.css" />
+```
 
 ```ts
 // v2 angular AOT:
