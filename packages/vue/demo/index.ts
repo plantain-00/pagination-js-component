@@ -5,7 +5,7 @@ import "../dist/";
 @Component({
     template: `
     <div>
-        <a href="https://github.com/plantain-00/pagination-js-component/tree/master/demo/vue/index.ts" target="_blank">the source code of the demo</a>
+        <a href="https://github.com/plantain-00/pagination-js-component/tree/master/packages/vue/demo" target="_blank">the source code of the demo</a>
         <h3>default mode:</h3>
         <div class="default-mode">
             <pagination :total="total"
