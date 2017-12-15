@@ -5,10 +5,10 @@ export * from "pagination-js-component";
 import { indexTemplateHtml } from "./variables";
 
 @Component({
-    template: indexTemplateHtml,
+    render: indexTemplateHtml,
     props: ["total", "current", "count", "mode"],
 })
-class Pagination extends Vue {
+export class Pagination extends Vue {
     total: number;
     current: number;
     count: number;
