@@ -1,6 +1,6 @@
 {
   "name": "pagination-vue-component",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "A vuejs pagination component.",
@@ -17,12 +17,20 @@
     "url": "https://github.com/plantain-00/pagination-js-component/issues"
   },
   "homepage": "https://github.com/plantain-00/pagination-js-component#readme",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
-    "pagination-js-component": "^4.0.0",
+    "pagination-js-component": "^4.1.1",
     "vue": "2",
     "vue-class-component": "6"
   },
   "devDependencies": {
     "typescript": "2.6.2"
+  },
+  "peerDependencies": {
+    "pagination-js-component": "^4.1.1",
+    "vue": "2",
+    "vue-class-component": "6"
   }
 }
