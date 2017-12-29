@@ -1,3 +1,5 @@
+# pagination-js-component
+
 [![Dependency Status](https://david-dm.org/plantain-00/pagination-js-component.svg)](https://david-dm.org/plantain-00/pagination-js-component)
 [![devDependency Status](https://david-dm.org/plantain-00/pagination-js-component/dev-status.svg)](https://david-dm.org/plantain-00/pagination-js-component#info=devDependencies)
 [![Build Status: Linux](https://travis-ci.org/plantain-00/pagination-js-component.svg?branch=master)](https://travis-ci.org/plantain-00/pagination-js-component)
@@ -5,11 +7,9 @@
 [![npm version](https://badge.fury.io/js/pagination-js-component.svg)](https://badge.fury.io/js/pagination-js-component)
 [![Downloads](https://img.shields.io/npm/dm/pagination-js-component.svg)](https://www.npmjs.com/package/pagination-js-component)
 
-# pagination-js-component
-
 A vuejs, angular, reactjs pagination component
 
-#### features
+## features
 
 + vuejs component
 + reactjs component
@@ -17,13 +17,13 @@ A vuejs, angular, reactjs pagination component
 + previous/next page
 + home/end page
 
-#### link css
+## link css
 
 ```html
 <link rel="stylesheet" href="./node_modules/pagination-js-component/dist/pagination.min.css" />
 ```
 
-#### vuejs component
+## vuejs component
 
 `npm pagination-vue-component`
 
@@ -38,9 +38,9 @@ import "pagination-vue-component";
     @jump="jump($event)"></pagination>
 ```
 
-the online demo: https://plantain-00.github.io/pagination-js-component/packages/vue/demo
+the online demo: <https://plantain-00.github.io/pagination-js-component/packages/vue/demo>
 
-#### reactjs component
+## reactjs component
 
 `npm pagination-react-component`
 
@@ -55,9 +55,9 @@ import { Pagination } from "pagination-react-component";
     jump={page => this.jump(page)}></Pagination>
 ```
 
-the online demo: https://plantain-00.github.io/pagination-js-component/packages/react/demo
+the online demo: <https://plantain-00.github.io/pagination-js-component/packages/react/demo>
 
-#### angular component
+## angular component
 
 `npm pagination-angular-component`
 
@@ -79,11 +79,11 @@ class MainModule { }
     (jump)="jump($event)"></pagination>
 ```
 
-the online demo: https://plantain-00.github.io/pagination-js-component/packages/vue/demo/jit
+the online demo: <https://plantain-00.github.io/pagination-js-component/packages/vue/demo/jit>
 
-the AOT online demo: https://plantain-00.github.io/pagination-js-component/packages/vue/demo/aot
+the AOT online demo: <https://plantain-00.github.io/pagination-js-component/packages/vue/demo/aot>
 
-#### properties and events of the component
+## properties and events of the component
 
 name | type | description
 --- | --- | ---
@@ -93,7 +93,7 @@ count | number | page count around current page, eg, if `current` is 5, `count` 
 jump | (page: number) => void | triggered when click a page
 mode | number? | mode
 
-#### change logs
+## change logs
 
 ```bash
 # v3
