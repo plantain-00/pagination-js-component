@@ -8,9 +8,6 @@
     "type": "git",
     "url": "git+https://github.com/plantain-00/pagination-js-component.git"
   },
-  "scripts": {
-    "tsc": "tsc -p src"
-  },
   "author": "York Yao",
   "license": "MIT",
   "bugs": {
@@ -24,9 +21,6 @@
     "pagination-js-component": "^4.1.1",
     "vue": "2",
     "vue-class-component": "6"
-  },
-  "devDependencies": {
-    "typescript": "2.6.2"
   },
   "peerDependencies": {
     "pagination-js-component": "^4.1.1",
