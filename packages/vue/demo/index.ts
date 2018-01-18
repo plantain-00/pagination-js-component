@@ -1,9 +1,9 @@
-import Vue from "vue";
-import Component from "vue-class-component";
-import "../dist/";
+import Vue from 'vue'
+import Component from 'vue-class-component'
+import '../dist/'
 
 @Component({
-    template: `
+  template: `
     <div>
         <a href="https://github.com/plantain-00/pagination-js-component/tree/master/packages/vue/demo" target="_blank">the source code of the demo</a>
         <h3>default mode:</h3>
@@ -25,22 +25,23 @@ import "../dist/";
             </pagination>
         </div>
     </div>
-    `,
+    `
 })
 class App extends Vue {
-    total = 12;
-    current1 = 1;
-    count = 2;
+  total = 12
+  current1 = 1
+  count = 2
 
-    current2 = 1;
-    mode1 = 1;
+  current2 = 1
+  mode1 = 1
 
-    jump1(page: number) {
-        this.current1 = page;
-    }
-    jump2(page: number) {
-        this.current2 = page;
-    }
+  jump1 (page: number) {
+    this.current1 = page
+  }
+  jump2 (page: number) {
+    this.current2 = page
+  }
 }
 
-new App({ el: "#container" });
+// tslint:disable-next-line:no-unused-expression
+new App({ el: '#container' })
