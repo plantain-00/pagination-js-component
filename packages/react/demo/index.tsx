@@ -12,27 +12,27 @@ class Main extends React.Component<{}, {}> {
 
   render () {
     return (
-            <div>
-                <a href='https://github.com/plantain-00/pagination-js-component/tree/master/packages/react/demo' target='_blank'>the source code of the demo</a>
-                <h3>default mode:</h3>
-                <div className='default-mode'>
-                    <Pagination total={this.total}
-                        current={this.current1}
-                        count={this.count}
-                        jump={page => this.jump1(page)}>
-                    </Pagination>
-                </div>
-                <br />
-                <h3>mode 1:</h3>
-                <div className='mode-1'>
-                    <Pagination total={this.total}
-                        current={this.current2}
-                        count={this.count}
-                        mode={this.mode1}
-                        jump={page => this.jump2(page)}>
-                    </Pagination>
-                </div>
-            </div>
+      <div>
+        <a href='https://github.com/plantain-00/pagination-js-component/tree/master/packages/react/demo' target='_blank'>the source code of the demo</a>
+        <h3>default mode:</h3>
+        <div className='default-mode'>
+          <Pagination total={this.total}
+            current={this.current1}
+            count={this.count}
+            jump={page => this.jump1(page)}>
+          </Pagination>
+        </div>
+        <br />
+        <h3>mode 1:</h3>
+        <div className='mode-1'>
+          <Pagination total={this.total}
+            current={this.current2}
+            count={this.count}
+            mode={this.mode1}
+            jump={page => this.jump2(page)}>
+          </Pagination>
+        </div>
+      </div>
     )
   }
   private jump1 (page: number) {
