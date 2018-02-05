@@ -13,11 +13,11 @@ import { indexTemplateHtml } from './variables'
 })
 export class PaginationComponent {
   @Input()
-    total: number
+    total!: number
   @Input()
-    current: number
+    current!: number
   @Input()
-    count: number
+    count!: number
   @Input()
     mode?: number
 

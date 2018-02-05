@@ -4,5 +4,5 @@
  */
 // tslint:disable
 
-export const indexTemplateHtml = `<ul class="pagination"><li *ngFor="let page of pages; trackBy: trackBy"><span *ngIf="page.disabled">{{page.text}}</span><a *ngIf="!page.disabled" href="javascript:void(0)" [class]="page.className" (click)="jumpTo(page.value)">{{page.text}}</a></li></ul>`;
+export const indexTemplateHtml = `<ul class="pagination"><li *ngFor="let page of pages; trackBy: trackBy"><span *ngIf="page.disabled">{{page.text}}</span><a *ngIf="!page.disabled" href="javascript:void(0)" [class]="page.className" (click)="jumpTo(page.value)">{{page.text}}</a></li></ul>`
 // tslint:enable

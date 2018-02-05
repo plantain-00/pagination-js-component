@@ -10,9 +10,9 @@ import { indexTemplateHtml, indexTemplateHtmlStatic } from './variables'
   props: ['total', 'current', 'count', 'mode']
 })
 export class Pagination extends Vue {
-  total: number
-  current: number
-  count: number
+  total!: number
+  current!: number
+  count!: number
   mode?: number
 
   get pages () {
