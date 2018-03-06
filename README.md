@@ -79,9 +79,9 @@ class MainModule { }
     (jump)="jump($event)"></pagination>
 ```
 
-the online demo: <https://plantain-00.github.io/pagination-js-component/packages/vue/demo/jit>
+the online demo: <https://plantain-00.github.io/pagination-js-component/packages/angular/demo/jit>
 
-the AOT online demo: <https://plantain-00.github.io/pagination-js-component/packages/vue/demo/aot>
+the AOT online demo: <https://plantain-00.github.io/pagination-js-component/packages/angular/demo/aot>
 
 ## properties and events of the component
 
