@@ -31,6 +31,14 @@ A vuejs, angular, reactjs pagination component
 import "pagination-vue-component";
 ```
 
+or
+
+```html
+<script src="./node_modules/vue/dist/vue.min.js"></script>
+<script src="./node_modules/vue-class-component/dist/vue-class-component.min.js"></script>
+<script src="./node_modules/pagination-vue-component/dist/pagination-vue-component.min.js"></script>
+```
+
 ```html
 <pagination :total="total"
     :current="current"
@@ -46,6 +54,14 @@ the online demo: <https://plantain-00.github.io/pagination-js-component/packages
 
 ```ts
 import { Pagination } from "pagination-react-component";
+```
+
+or
+
+```html
+<script src="./node_modules/react/umd/react.production.min.js"></script>
+<script src="./node_modules/react-dom/umd/react-dom.production.min.js"></script>
+<script src="./node_modules/pagination-react-component/dist/pagination-react-component.min.js"></script>
 ```
 
 ```html
