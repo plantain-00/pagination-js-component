@@ -1,6 +1,6 @@
 {
   "name": "pagination-react-component",
-  "version": "4.1.1",
+  "version": "4.2.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "A reactjs pagination component.",
@@ -18,7 +18,7 @@
     "dist"
   ],
   "dependencies": {
-    "pagination-js-component": "^4.1.1",
+    "pagination-js-component": "^4.2.0",
     "react": "16",
     "react-dom": "16"
   },
@@ -27,7 +27,7 @@
     "@types/react-dom": "16.0.4"
   },
   "peerDependencies": {
-    "pagination-js-component": "^4.1.1",
+    "pagination-js-component": "^4.2.0",
     "react": "16",
     "react-dom": "16"
   }
