@@ -2,6 +2,9 @@
   "name": "pagination-react-component",
   "version": "4.2.0",
   "main": "dist/index.js",
+  "module": "dist/index.js",
+  "unpkg": "dist/pagination-react-component.min.js",
+  "jsdelivr": "dist/pagination-react-component.min.js",
   "types": "dist/index.d.ts",
   "description": "A reactjs pagination component.",
   "repository": {
