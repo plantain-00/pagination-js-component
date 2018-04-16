@@ -1,0 +1,37 @@
+{
+  "name": "pagination-react-component",
+  "version": "4.2.1",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "unpkg": "dist/pagination-react-component.min.js",
+  "jsdelivr": "dist/pagination-react-component.min.js",
+  "types": "dist/index.d.ts",
+  "description": "A reactjs pagination component.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plantain-00/pagination-js-component.git"
+  },
+  "author": "York Yao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/plantain-00/pagination-js-component/issues"
+  },
+  "homepage": "https://github.com/plantain-00/pagination-js-component#readme",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "pagination-js-component": "^4.2.0",
+    "react": "16",
+    "react-dom": "16"
+  },
+  "devDependencies": {
+    "@types/react": "16.3.10",
+    "@types/react-dom": "16.0.5"
+  },
+  "peerDependencies": {
+    "pagination-js-component": "^4.2.0",
+    "react": "16",
+    "react-dom": "16"
+  }
+}

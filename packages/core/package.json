@@ -1,0 +1,26 @@
+{
+  "name": "pagination-js-component",
+  "version": "4.2.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "description": "A vuejs, angular, reactjs pagination component.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plantain-00/pagination-js-component.git"
+  },
+  "author": "York Yao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/plantain-00/pagination-js-component/issues"
+  },
+  "homepage": "https://github.com/plantain-00/pagination-js-component#readme",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "tslib": "1"
+  },
+  "peerDependencies": {
+    "tslib": "1"
+  }
+}
