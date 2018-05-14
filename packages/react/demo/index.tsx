@@ -10,7 +10,7 @@ class Main extends React.Component<{}, {}> {
   private current2 = 1
   private mode1 = 1
 
-  render () {
+  render() {
     return (
       <div>
         <a href='https://github.com/plantain-00/pagination-js-component/tree/master/packages/react/demo' target='_blank'>the source code of the demo</a>
@@ -35,11 +35,11 @@ class Main extends React.Component<{}, {}> {
       </div>
     )
   }
-  private jump1 (page: number) {
+  private jump1(page: number) {
     this.current1 = page
     this.setState({ current1: this.current1 })
   }
-  private jump2 (page: number) {
+  private jump2(page: number) {
     this.current2 = page
     this.setState({ current2: this.current2 })
   }

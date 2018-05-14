@@ -15,11 +15,11 @@ export class Pagination extends Vue {
   count!: number
   mode?: number
 
-  get pages () {
+  get pages() {
     return common.getPages(this.current, this.total, this.count, this.mode)
   }
 
-  jumpTo (page: number) {
+  jumpTo(page: number) {
     this.$emit('jump', page)
   }
 }
