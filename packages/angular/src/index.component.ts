@@ -13,26 +13,26 @@ import { indexTemplateHtml } from './variables'
 })
 export class PaginationComponent {
   @Input()
-    total!: number
+  total!: number
   @Input()
-    current!: number
+  current!: number
   @Input()
-    count!: number
+  count!: number
   @Input()
-    mode?: number
+  mode?: number
 
   @Output()
-    jump = new EventEmitter<number>()
+  jump = new EventEmitter<number>()
 
-  get pages () {
+  get pages() {
     return common.getPages(this.current, this.total, this.count, this.mode)
   }
 
-  jumpTo (page: number) {
+  jumpTo(page: number) {
     this.jump.emit(page)
   }
 
-  trackBy (page: common.Page, index: number) {
+  trackBy(page: common.Page, index: number) {
     return index
   }
 }

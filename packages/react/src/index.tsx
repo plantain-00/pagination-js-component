@@ -12,7 +12,7 @@ export class Pagination extends React.PureComponent<{
   mode?: number;
   jump: (page: number) => void;
 }, { hovered: boolean }> {
-  render () {
+  render() {
     const list = common.getPages(this.props.current, this.props.total, this.props.count, this.props.mode).map(page => {
       if (page.disabled) {
         return (
@@ -34,7 +34,7 @@ export class Pagination extends React.PureComponent<{
       </ul>
     )
   }
-  private jumpTo (page: number) {
+  private jumpTo(page: number) {
     this.props.jump(page)
   }
 }

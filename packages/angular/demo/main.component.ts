@@ -34,10 +34,10 @@ export class MainComponent {
   current2 = 1
   mode1 = 1
 
-  jump1 (page: number) {
+  jump1(page: number) {
     this.current1 = page
   }
-  jump2 (page: number) {
+  jump2(page: number) {
     this.current2 = page
   }
 }

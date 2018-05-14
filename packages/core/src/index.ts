@@ -11,7 +11,7 @@ export type Page = {
 /**
  * @public
  */
-export function getPages (current: number, total: number, count: number, mode: number | undefined) {
+export function getPages(current: number, total: number, count: number, mode: number | undefined) {
   const pages: Page[] = []
   pages.push({
     value: 1,
@@ -30,8 +30,8 @@ export function getPages (current: number, total: number, count: number, mode: n
   const mode1EndIndex = Math.min(mode1StartIndex + mode1Count - 1, total)
   for (let i = 1; i <= total; i++) {
     const isVisible = mode === 1
-            ? i >= mode1StartIndex && i <= mode1EndIndex
-            : i - current <= count && i - current >= -count
+      ? i >= mode1StartIndex && i <= mode1EndIndex
+      : i - current <= count && i - current >= -count
     if (isVisible) {
       pages.push({
         value: i,
