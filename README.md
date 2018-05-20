@@ -25,6 +25,8 @@ A vuejs, angular, reactjs pagination component
 
 ## vuejs component
 
+[![gzip size](https://img.badgesize.io/https://unpkg.com/pagination-vue-component?compression=gzip)](https://unpkg.com/pagination-vue-component)
+
 `npm pagination-vue-component`
 
 ```ts
@@ -49,6 +51,8 @@ or
 the online demo: <https://plantain-00.github.io/pagination-js-component/packages/vue/demo>
 
 ## reactjs component
+
+[![gzip size](https://img.badgesize.io/https://unpkg.com/pagination-react-component?compression=gzip)](https://unpkg.com/pagination-react-component)
 
 `npm pagination-react-component`
 
