@@ -1,6 +1,6 @@
 {
   "name": "pagination-angular-component",
-  "version": "4.2.1",
+  "version": "4.3.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "A angular pagination component.",
@@ -21,7 +21,7 @@
     "@angular/common": "6",
     "@angular/core": "6",
     "@angular/forms": "6",
-    "pagination-js-component": "^4.2.0"
+    "pagination-js-component": "^4.3.0"
   },
   "devDependencies": {
     "@angular/platform-browser": "6.1.0",

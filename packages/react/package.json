@@ -1,6 +1,6 @@
 {
   "name": "pagination-react-component",
-  "version": "4.2.1",
+  "version": "4.3.0",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "unpkg": "dist/pagination-react-component.min.js",
@@ -21,7 +21,7 @@
     "dist"
   ],
   "dependencies": {
-    "pagination-js-component": "^4.2.0",
+    "pagination-js-component": "^4.3.0",
     "react": "16",
     "react-dom": "16"
   },
