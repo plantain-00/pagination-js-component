@@ -6,7 +6,7 @@ export default {
   input: 'packages/react/dist/index.js',
   name: 'Pagination',
   plugins: [
-    resolve(),
+    resolve({ browser: true }),
     uglify(),
     commonjs()
   ],
