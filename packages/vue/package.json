@@ -24,10 +24,5 @@
     "pagination-js-component": "^4.3.0",
     "vue": "2",
     "vue-class-component": "6"
-  },
-  "peerDependencies": {
-    "pagination-js-component": "^4.2.0",
-    "vue": "2",
-    "vue-class-component": "6"
   }
 }
