@@ -21,6 +21,9 @@
   "bugs": {
     "url": "https://github.com/plantain-00/pagination-js-component/issues"
   },
+  "typeCoverage": {
+    "atLeast": 68
+  },
   "homepage": "https://github.com/plantain-00/pagination-js-component#readme",
   "devDependencies": {
     "@angular/compiler": "7.0.3",
