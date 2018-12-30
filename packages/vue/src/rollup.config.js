@@ -4,13 +4,13 @@ import commonjs from 'rollup-plugin-commonjs'
 
 export default {
   input: 'packages/vue/dist/index.js',
-  name: 'Pagination',
   plugins: [
     resolve({ browser: true }),
     uglify(),
     commonjs()
   ],
   output: {
+    name: 'Pagination',
     file: 'packages/vue/dist/pagination-vue-component.min.js',
     format: 'umd'
   },
