@@ -3,10 +3,12 @@
  * It is not mean to be edited by hand
  */
 // tslint:disable
+/* eslint-disable */
 import { Pagination } from "./index"
 
 // @ts-ignore
 export function indexTemplateHtml(this: Pagination) {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('ul',{staticClass:"pagination"},_vm._l((_vm.pages),function(page){return _c('li',{key:page.text},[(page.disabled)?_c('span',[_vm._v(_vm._s(page.text))]):_c('a',{class:page.className,attrs:{"href":"javascript:void(0)"},on:{"click":function($event){return _vm.jumpTo(page.value)}}},[_vm._v(_vm._s(page.text))])])}),0)}
 // @ts-ignore
 export var indexTemplateHtmlStatic = [  ]
+/* eslint-enable */
 // tslint:enable
