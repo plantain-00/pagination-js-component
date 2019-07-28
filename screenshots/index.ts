@@ -94,5 +94,5 @@ import puppeteer from 'puppeteer'
     await page.screenshot({ path: `screenshots/${type}-mode-1-click-previous.png` })
   }
 
-  browser.close()
+  await browser.close()
 })()

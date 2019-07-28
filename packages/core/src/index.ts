@@ -1,7 +1,7 @@
 /**
  * @public
  */
-export type Page = {
+export interface Page {
   value: number;
   disabled: boolean;
   text: string;
