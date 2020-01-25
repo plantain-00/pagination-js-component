@@ -25,7 +25,7 @@ const webpackAngularAotCommand = `webpack --config packages/angular/demo/aot/web
 
 const revStaticCommand = `rev-static`
 const cssCommand = [
-  `lessc packages/core/src/pagination.less -sm=on > packages/core/src/pagination.css`,
+  `lessc packages/core/src/pagination.less --math=strict > packages/core/src/pagination.css`,
   `postcss packages/core/src/pagination.css -o packages/core/dist/pagination.css`,
   `cleancss packages/core/dist/pagination.css -o packages/core/dist/pagination.min.css`,
   `cleancss packages/core/dist/pagination.min.css ./node_modules/github-fork-ribbon-css/gh-fork-ribbon.css -o packages/core/demo/index.bundle.css`
