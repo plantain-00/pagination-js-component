@@ -8,13 +8,12 @@
 [![Downloads](https://img.shields.io/npm/dm/pagination-js-component.svg)](https://www.npmjs.com/package/pagination-js-component)
 [![type-coverage](https://img.shields.io/badge/dynamic/json.svg?label=type-coverage&prefix=%E2%89%A5&suffix=%&query=$.typeCoverage.atLeast&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fplantain-00%2Fpagination-js-component%2Fmaster%2Fpackage.json)](https://github.com/plantain-00/pagination-js-component)
 
-A vuejs, angular, reactjs pagination component
+A vuejs and reactjs pagination component
 
 ## features
 
 + vuejs component
 + reactjs component
-+ angular component
 + previous/next page
 + home/end page
 
@@ -77,32 +76,6 @@ or
 ```
 
 the online demo: <https://plantain-00.github.io/pagination-js-component/packages/react/demo>
-
-## angular component
-
-`npm pagination-angular-component`
-
-```ts
-import { PaginationModule } from "pagination-angular-component";
-
-@NgModule({
-    imports: [BrowserModule, FormsModule, PaginationModule],
-    declarations: [MainComponent],
-    bootstrap: [MainComponent],
-})
-class MainModule { }
-```
-
-```html
-<pagination [total]="total"
-    [current]="current"
-    [count]="count"
-    (jump)="jump($event)"></pagination>
-```
-
-the online demo: <https://plantain-00.github.io/pagination-js-component/packages/angular/demo/jit>
-
-the AOT online demo: <https://plantain-00.github.io/pagination-js-component/packages/angular/demo/aot>
 
 ## properties and events of the component
 
