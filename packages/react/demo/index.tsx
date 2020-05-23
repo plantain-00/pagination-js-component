@@ -2,7 +2,7 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { Pagination } from '../dist/'
 
-class Main extends React.Component<{}, {}> {
+class Main extends React.Component<unknown, unknown> {
   private total = 12
   private current1 = 1
   private count = 2
