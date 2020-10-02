@@ -1,6 +1,6 @@
 {
   "name": "pagination-vue-component",
-  "version": "4.5.1",
+  "version": "5.0.0",
   "main": "dist/pagination-vue-component.min.js",
   "module": "dist/index.js",
   "unpkg": "dist/pagination-vue-component.min.js",
@@ -18,9 +18,8 @@
   },
   "homepage": "https://github.com/plantain-00/pagination-js-component#readme",
   "dependencies": {
-    "pagination-js-component": "^4.5.1",
-    "vue": "2",
-    "vue-class-component": "7"
+    "pagination-js-component": "^5.0.0",
+    "vue": "3"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
