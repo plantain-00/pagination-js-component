@@ -1,8 +1,24 @@
-import Vue from 'vue'
-import Component from 'vue-class-component'
-import '../dist/'
+import { createApp, defineComponent } from 'vue'
+import { Pagination } from '../dist/'
 
-@Component({
+const App = defineComponent({
+  data: () => {
+    return {
+      total: 12,
+      current1: 1,
+      count: 2,
+      current2: 1,
+      mode1: 1,
+    }
+  },
+  methods: {
+    jump1(page: number) {
+      this.current1 = page
+    },
+    jump2(page: number) {
+      this.current2 = page
+    },
+  },
   template: `
     <div>
         <a href="https://github.com/plantain-00/pagination-js-component/tree/master/packages/vue/demo" target="_blank">the source code of the demo</a>
@@ -27,20 +43,7 @@ import '../dist/'
     </div>
     `
 })
-class App extends Vue {
-  total = 12
-  current1 = 1
-  count = 2
 
-  current2 = 1
-  mode1 = 1
-
-  jump1(page: number) {
-    this.current1 = page
-  }
-  jump2(page: number) {
-    this.current2 = page
-  }
-}
-
-new App({ el: '#container' })
+const app = createApp(App)
+app.component('pagination', Pagination)
+app.mount('#container')

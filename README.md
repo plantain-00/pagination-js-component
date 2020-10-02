@@ -31,7 +31,8 @@ A vuejs and reactjs pagination component
 `npm pagination-vue-component`
 
 ```ts
-import "pagination-vue-component";
+import { Pagination } from "pagination-vue-component";
+app.component('pagination', Pagination)
 ```
 
 or
@@ -89,6 +90,15 @@ jump | (page: number) => void | triggered when click a page
 mode | number? | mode
 
 ## change logs
+
+```ts
+// v4 vue 2
+import 'pagination-vue-component'
+
+// v5 vue 3
+import { Pagination } from "pagination-vue-component"
+app.component('pagination', Pagination)
+```
 
 ```bash
 # v3
