@@ -39,7 +39,6 @@ or
 
 ```html
 <script src="./node_modules/vue/dist/vue.min.js"></script>
-<script src="./node_modules/vue-class-component/dist/vue-class-component.min.js"></script>
 <script src="./node_modules/pagination-vue-component/dist/pagination-vue-component.min.js"></script>
 ```
 
