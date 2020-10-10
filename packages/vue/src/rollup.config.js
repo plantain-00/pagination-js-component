@@ -12,13 +12,9 @@ export default {
   output: {
     name: 'Pagination',
     file: 'packages/vue/dist/pagination-vue-component.min.js',
-    format: 'umd',
-    globals: {
-      'vue-class-component': 'VueClassComponent'
-    }
+    format: 'umd'
   },
   external: [
-    'vue',
-    'vue-class-component'
+    'vue'
   ]
 }
